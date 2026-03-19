@@ -1,0 +1,17 @@
+import 'package:flutter/material.dart';
+import '../widgets/mi_drawer.dart';
+
+class UsuariosPage extends StatelessWidget {
+  const UsuariosPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text("Usuarios y Clientes")),
+      drawer: const MiDrawer(),
+      body: Center(
+        child: Image.network('https://raw.githubusercontent.com/LoyaCesar0630/Imagenes-para-flutter-6TO-I-11-FEB-2026/refs/heads/main/roll.jpeg', width: 200, height: 200),
+      ),
+    );
+  }
+}
